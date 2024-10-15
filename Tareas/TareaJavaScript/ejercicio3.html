@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("Ingrese el texto a analisar: ");
+        aux1="";
+        aux2="";
+        for(let i=0 ; i<=a.length ; i++ ){
+            if(a[i]!=" "){
+                aux1+=a[i];
+            }
+        };
+
+        for(let i=0 ; i<=aux1.length ; i++){
+
+            aux2+=aux1[(aux1.length-i)];
+        }
+        if(aux1==aux2){
+            document.write("El parámetro es un palíndromo");
+        }else{
+            document.write("El parámetro no es un palíndromo");
+        }
+    </script>
+</body>
+</html>
