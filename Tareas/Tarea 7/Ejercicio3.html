@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Introduzca una cadena en texto:")
+        if (esPalindromo(a)){
+            document.write("La cadena es un palindromo:")
+        }
+        else{
+            document.write("La cadena no es un palindromo")
+        }
+        function esPalindromo(texto) {
+            var textoLimpio = texto.toLowerCase().replace(/[^a-z0-9]/g, '');
+            var textoInvertido = textoLimpio.split('').reverse().join('');
+            return textoLimpio === textoInvertido;
+        }
+    </script>
+</body>
+</html>
