@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Personal CMB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="ajaxfetch.js"></script>
+</head>
+<body>
+    <div class="container-fluid border border-dark-bg-subtle">
+        <div class="row">
+            <!-- Navegación (color azul, imagen y enlaces) -->
+            <div class="col-sm-3 col-md-2 col-lg-2 bg-primary text-white p-3" id="menu">
+                <!-- Imagen en la parte superior de la navegación -->
+                <img src="images/escudo.jpg" alt="Imagen de perfil" class="img-fluid rounded-circle mb-3">
+                
+                <!-- Línea separadora -->
+                <hr class="text-white">
+                
+                <!-- Enlaces -->
+                <ul class="btn-group-vertical list-unstyled mt-5">
+                    <li><a href="examenfinal.html" class="btn btn-primary">Inicio</a></li>
+                    <li><a href="#" class="btn btn-primary">Pregunta 2</a></li>
+                    <li><a href="javascript:listar()" class="btn btn-primary">Pregunta 3</a></li>
+                    <li><a href="javascript:ejer4()" class="btn btn-primary">Pregunta 4</a></li>
+                    <li><a href="javascript:colores()" class="btn btn-primary">Pregunta 5</a></li>
+                </ul>
+            </div>
+
+            <!-- Contenido Principal -->
+            <div class="col-sm-9 col-md-10 col-lg-10">
+                <!-- Encabezado -->
+                <div class="row bg-primary-subtle justify-content-start pt-2 pb-2" id="navegacion">
+                    <div class="col">
+                        <a href="examenfinal.html" class="btn">Inicio</a>
+                        <a href="#" class="btn">Preguna 2</a>
+                        <a href="javascript:listar()" class="btn">Pregunta 3</a>
+                        <a href="javascript:ejer4()" class="btn">Pregunta 4</a>
+                        <a href="#" class="btn">Pregunta 5</a>
+                    </div>
+                    <div class="col justify-content-end col-2">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#sesionModal" onclick="modalf()" id="login">Iniciar Sesion</button>
+                    </div>
+                </div>
+                <div class="row" id="principal">
+                    <div class="card aling-item-center">
+                        <div class="card-body text-center">
+                            <!-- Título -->
+                            <h5 class="card-title">SIS 256 Programación Web</h5>
+
+                            <!-- Texto pequeño (Examen Final) -->
+                            <p class="card-text text-muted">Examen Final</p>
+                        </div>
+                        <!-- Imagen -->
+                        <img src="images/foto.jpg" class="card-img-top rounded-circle" alt="Foto de perfil" style="width: 150px; height: 150px; object-fit: cover; margin: 0 auto;">
+                
+                        <!-- Cuerpo de la card -->
+                        <div class="card-body text-center">
+
+                            <!-- Nombre -->
+                            <p class="h5">Rayner Caba Condori</p>
+                            
+                            <!-- Carrera -->
+                            <p class="card-text">Ingeniería en Sistemas</p>
+                            
+                            <!-- Otro texto -->
+                            <p class="card-text">Repositorio: 
+                                <a href="https://github.com/Kbauser47/DesarrolloWebRCC.git" class="btn btn-primary">haga click aqui</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center justify-content-center pb-5">
+
+                    <div class="col col-12 mt-4 mb-2"><h5>Nuestros Servicios</h5></div>
+
+                    <div class="col col-2">
+                        <div class="card" style="max-width: 18rem;">
+                            <div class="card-header bg-primary p-4 text-white"><h4>Consultoria</h4></div>
+                            <div class="card-body">
+                              <h6 class="card-text">Consultoria</h6>
+                              <p class="card-text">Asesotamiento personalizado para mejorar tu negocio.</p>
+                            </div>
+                          </div>
+                    </div>
+                        <div class="col col-2">
+                            <div class="card" style="max-width: 18rem;">
+                                <div class="card-header bg-success p-4 text-white"><h4>Desarrollo Web</h4></div>
+                                <div class="card-body">
+                                  <h6 class="card-text">Desarrollo Web</h6>
+                                  <p class="card-text">Sitios web Modernos y funcionales para tu empresa.</p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="col col-2">
+                            <div class="card" style="max-width: 18rem;">
+                                <div class="card-header bg-danger p-4 text-white"><h4>Soporte Tecnico</h4></div>
+                                <div class="card-body">
+                                  <h6 class="card-text">Soporte Tecnico</h6>
+                                  <p class="card-text">Asistencia 24/7 para garantizar el éxito de tu negocio.</p>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+                <div class="row text-white text-center" id="pie" style="background-color: #001f3f;">
+                    <div class="col pt-1 fs-6">&copy; Examen Final Tecnología y DesarrolloWeb</div>
+                    <div class="col">
+                        <a href="#" class="btn text-white">Facebook</a>
+                        <a href="#" class="btn text-white">Twitter</a>
+                        <a href="#" class="btn text-white">Linkedln</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
